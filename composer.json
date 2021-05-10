@@ -1,20 +1,32 @@
 {
-    "name" : "anax/noname",
-    "description": "A me page for the ramverk1 course.",
+    "name": "8ptk4/weather",
+    "type": "library",
+    "description": "Anax weather module.",
+    "keywords": ["boilerplate", "framework", "mvc", "micro", "education", "weather"],
     "license": "MIT",
-    "minimum-stability": "beta",
-    "prefer-stable": true,
-    "autoload": {
-        "psr-4": {"Anax\\": "src/"}
-    },
-    "repositories": [
+    "authors": [
         {
-            "type": "vcs",
-            "url": "https://github.com/canax/remserver"
+            "name": "Patrik Karlsson",
+            "role": "Developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/8ptk4/weather-module/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anax\\": "src/"
+        }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true,
     "require": {
-        "anax/anax-ramverk1-me": "^1.0.0",
-        "anax/remserver": "dev-master"
+        "php": ">=7.4",
+        "anax/commons": "^2.0.14"
+    },
+    "require-dev": {
+        "phpmetrics/phpmetrics": "^2",
+        "phpunit/phpunit": "^7",
+        "anax/anax": "^2.0.17"
     }
 }
