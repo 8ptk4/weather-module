@@ -14,6 +14,6 @@ Inside composer.json add the following:
 Then, run the command 'composer update' in the terminal.
 
 Lastly run this command:
-    <pre>
-        bash vendor/8ptk4/weather/.anax/scaffold/postprocess.d/700_remserver.bash
-    </pre>
+<pre>
+    bash vendor/8ptk4/weather/.anax/scaffold/postprocess.d/700_weather.bash
+</pre>
