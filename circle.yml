@@ -8,7 +8,6 @@ jobs:
     working_directory: ~
 
     steps:
-      pre:
-        - make install
-        - make check
-        - make test
+      - make install
+      - make check
+      - make test
