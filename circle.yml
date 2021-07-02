@@ -6,9 +6,10 @@ jobs:
       php:
     working_directory: ~/weather-module
     environment:
-    test:
-      pre: 
-        - "make install"
-        - "make check"
-      override:
-        - "make test"
+    steps:
+      test:
+        pre: 
+          - "make install"
+          - "make check"
+        override:
+          - "make test"
