@@ -1,5 +1,7 @@
 # weather-module
 
+[![Build Status](https://travis-ci.com/8ptk4/weather-module.svg?branch=master)](https://travis-ci.com/github/8ptk4/weather-module)
+
 ## Installation into an existing Anax installation
 
 Inside composer.json add the following:
