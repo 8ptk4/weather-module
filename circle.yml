@@ -1,11 +1,13 @@
-version: 2
+machine:
+    php:
+        #version: 5.6.18
 
-jobs:
-  test:
-    machine:
-      php:
-    environment:
-    steps:
-      - make install
-      - make check
-      - make test
+
+
+test:
+    pre:
+    - make install
+    - make check
+
+    override:
+    - make test
