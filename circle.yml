@@ -1,9 +1,14 @@
-machine: 
-  php: 
-    version: "7.4.3"
-test: 
-  override: 
-    - "make test"
-  pre: 
-    - "make install"
-    - "make check"
+version: 2
+
+jobs:
+  build:
+    machine:
+      php:
+    working_directory: ~/weather-module
+    environment:
+    test:
+      pre: 
+        - "make install"
+        - "make check"
+      override:
+        - "make test"
