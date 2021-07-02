@@ -1,6 +1,7 @@
 # weather-module
 
 [![Build Status](https://travis-ci.com/8ptk4/weather-module.svg?branch=master)](https://travis-ci.com/github/8ptk4/weather-module)
+[![CircleCI](https://circleci.com/gh/8ptk4/weather-module/tree/master.svg?style=svg)](https://circleci.com/gh/8ptk4/weather-module/tree/master)
 
 ## Installation into an existing Anax installation
 
