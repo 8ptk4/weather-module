@@ -9,8 +9,6 @@ jobs:
 
     steps:
       pre:
-        - run: make install
-        - run: make check
-    
-      override:
-        - run: make test
+        - make install
+        - make check
+        - make test
