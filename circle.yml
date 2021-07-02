@@ -1,13 +1,18 @@
-machine:
-    php:
-        #version: 5.6.18
-
-
-
-test:
-    pre:
-    - make install
-    - make check
-
-    override:
-    - make test
+version: 2
+jobs:
+  build:
+    working_directory: /weather
+    docker:
+      - image: php:7.1-apache
+        environment:
+          APP_ENV: test
+    steps:
+      - run:
+          name: Setup
+          command: make install
+      - run:
+          name: Check
+          command: make check
+      - run:
+          name: test
+          command: make test
