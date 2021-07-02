@@ -1,10 +1,9 @@
-machine:
-  php:
-    version: 7.4.3
-
-test:
-  pre:
-    - make install
-    - make check
-  override:
-    - make test
+machine: 
+  php: 
+    version: "7.4.3"
+test: 
+  override: 
+    - "make test"
+  pre: 
+    - "make install"
+    - "make check"
