@@ -1,11 +1,14 @@
-machine:
-  php:
-    #version: 7.4.3
+version: 2.1
 
-test:
-  pre:
-  - make install
-  - make check
+jobs:
+  machine:
+    php:
+      #version: 7.4.3
 
-  override:
-  - make test
+  test:
+    pre:
+    - make install
+    - make check
+
+    override:
+    - make test
