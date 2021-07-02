@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php:7.4.3
+    steps:
+      - checkout
+      - run:
+          name: Setup
+          command: |
+            make install
+      - run:
+          name: Check
+          command: |
+            make check
+      - run:
+          name: Running tests
+          command: |
+            make test
