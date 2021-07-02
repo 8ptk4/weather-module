@@ -1,11 +1,9 @@
 version: 2
 jobs:
   build:
-    working_directory: /weather
+    working_directory: ~/weather_module
     docker:
       - image: php:7.1-apache
-        environment:
-          APP_ENV: test
     steps:
       - run:
           name: Setup
