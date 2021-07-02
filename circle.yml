@@ -4,11 +4,8 @@ machine:
 
 test:
   pre:
-    - make install
-    - make check
+  - make install
+  - make check
 
   override:
-    - make test
-
-
-
+  - make test
