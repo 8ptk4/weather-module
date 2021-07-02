@@ -4,9 +4,8 @@ jobs:
   build:
     machine:
       php:
-    working_directory: ~/weather-module
     environment:
     steps:
-      - "make install"
-      - "make check"
-      - "make test"
+      - make install
+      - make check
+      - make test
