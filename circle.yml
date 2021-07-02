@@ -7,8 +7,6 @@ jobs:
     working_directory: ~/weather-module
     environment:
     steps:
-      pre: 
-        - "make install"
-        - "make check"
-      override:
-        - "make test"
+      - "make install"
+      - "make check"
+      - "make test"
