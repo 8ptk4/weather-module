@@ -10,8 +10,6 @@ build:
   dependencies:
     before:
       - command: "mkdir build"
-    after:
-      - "composer require --dev phpunit/phpunit"
   tests:
     override:
       - command: "vendor/bin/phpunit --configuration .phpunit.xml"
