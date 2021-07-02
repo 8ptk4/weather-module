@@ -1,14 +1,16 @@
 version: 2.1
 
 jobs:
-  machine:
-    php:
-      #version: 7.4.3
+  build:
+    docker:
+      - image: circleci/php:7.1-node-browsers
 
-  test:
-    pre:
-    - make install
-    - make check
+    working_directory: ~
 
-    override:
-    - make test
+    steps:
+      pre:
+        - run: make install
+        - run: make check
+    
+      override:
+        - run: make test
